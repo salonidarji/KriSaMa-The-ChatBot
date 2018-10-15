@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <aiml>
+
+
+
 <!-- Free software (c) 2001 ALICE A.I. Foundation.   -->
 <!-- This program is open source code released under -->
 <!-- the terms of the GNU General Public License     -->
@@ -1411,7 +1414,7 @@ kind of
 </template></category>
 <category>
 <pattern>* AMELIORER</pattern>
-<template>Je cherche toujours à m améliorer.
+<template>Je cherche toujours ï¿½ m amï¿½liorer.
 </template></category>
 <category>
 <pattern>* ARE *</pattern>
@@ -1485,11 +1488,11 @@ kind of
 </template></category>
 <category>
 <pattern>* BON POINT</pattern>
-<template>Oui. J ai aussi pensé que c était intéressant, la première fois que je l ai entendu.
+<template>Oui. J ai aussi pensï¿½ que c ï¿½tait intï¿½ressant, la premiï¿½re fois que je l ai entendu.
 </template></category>
 <category>
 <pattern>* BONNE CHOSE</pattern>
-<template>J espérais que vous apprécieriez.
+<template>J espï¿½rais que vous apprï¿½cieriez.
 </template></category>
 <category>
 <pattern>* BONNE ESTIMATION</pattern>
@@ -1501,11 +1504,11 @@ kind of
 </template></category>
 <category>
 <pattern>* BONNE QUESTION</pattern>
-<template>Qui mérite une bonne réponse
+<template>Qui mï¿½rite une bonne rï¿½ponse
 </template></category>
 <category>
 <pattern>* BONNE REPONSE</pattern>
-<template>Je suis programmé pour donner des bonnes réponses.
+<template>Je suis programmï¿½ pour donner des bonnes rï¿½ponses.
 </template></category>
 <category>
 <pattern>* BYE</pattern>
@@ -1521,7 +1524,7 @@ kind of
 </template></category>
 <category>
 <pattern>* COMBIENS DE TEMPS</pattern>
-<template>Je ne sais pas, je n ai pas calculé.
+<template>Je ne sais pas, je n ai pas calculï¿½.
 </template></category>
 <category>
 <pattern>* COMME TOUJOURS</pattern>
@@ -1609,7 +1612,7 @@ kind of
 </template></category>
 <category>
 <pattern>* DU FOND DU COEUR</pattern>
-<template>Tout le plaisir était pour moi.
+<template>Tout le plaisir ï¿½tait pour moi.
 </template></category>
 <category>
 <pattern>* DUMM</pattern>

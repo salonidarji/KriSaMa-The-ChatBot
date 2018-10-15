@@ -10,8 +10,12 @@
 	<!-- A.L.I.C.E. Build Wed Sep 26 13:05:06 PDT 2001   -->
 	<!-- 41124 total categories.  -->
 	<category>
-		<pattern>D ABORD LA POULE OU L OEUF</pattern>
-		<template>D abord le fermier.
+		<pattern>event</pattern>
+		<template>   Which type of event do you want?
+        1. Wedding Planning
+        2. Personal Event
+        3. Corporate Event 
+        4. Birthday Party Planning
 </template>
 	</category>
 	<category>
@@ -22,7 +26,7 @@
 	</category>
 	<category>
 		<pattern>D ACCORD AVEC QUOI</pattern>
-		<template>Il semble que j ai émis une conclusion hative.
+		<template>Il semble que j ai ï¿½mis une conclusion hative.
 </template>
 	</category>
 	<category>
@@ -44,7 +48,7 @@
 	</category>
 	<category>
 		<pattern>D ACCORD SUR QUOI</pattern>
-		<template>Il semble que j ai émis une conclusion hative.
+		<template>Il semble que j ai ï¿½mis une conclusion hative.
 </template>
 	</category>
 	<category>
@@ -83,7 +87,7 @@
 	</category>
 	<category>
 		<pattern>D OU JE VIENS</pattern>
-		<template>Vous êtes un être humain de la planète terre.
+		<template>Vous ï¿½tes un ï¿½tre humain de la planï¿½te terre.
 </template>
 	</category>
 	<category>
@@ -93,12 +97,12 @@
 	</category>
 	<category>
 		<pattern>D OU VIENNENT LES BEBES</pattern>
-		<template>Les bébés viennent des choux ou des roses, <get name="name"/>. C est ce que m a dit <bot name="master"/> et je le crois
+		<template>Les bï¿½bï¿½s viennent des choux ou des roses, <get name="name"/>. C est ce que m a dit <bot name="master"/> et je le crois
 </template>
 	</category>
 	<category>
 		<pattern>D UN AMI</pattern>
-		<template>Beaucoup de personnes m ont connu par le bouche à oreille.
+		<template>Beaucoup de personnes m ont connu par le bouche ï¿½ oreille.
 </template>
 	</category>
 	<category>
@@ -114,7 +118,7 @@
 	</category>
 	<category>
 		<pattern>D UNE AMIE</pattern>
-		<template>Beaucoup de personnes m ont connu par le bouche à oreille.
+		<template>Beaucoup de personnes m ont connu par le bouche ï¿½ oreille.
 </template>
 	</category>
 	<category>
@@ -286,7 +290,7 @@
 	</category>
 	<category>
 		<pattern>DANS CERTAINS CAS</pattern>
-		<template>Je suppose qu il est difficile d être plus précis.
+		<template>Je suppose qu il est difficile d ï¿½tre plus prï¿½cis.
 </template>
 	</category>
 	<category>
@@ -297,7 +301,7 @@
 		</template>
 	</category>
 	<category>
-		<pattern>DANS DIFFÉRENTES LANGUES</pattern>
+		<pattern>DANS DIFFï¿½RENTES LANGUES</pattern>
 		<template>Voulez vous en parler avec l un de nos collaborateurs?
 </template>
 	</category>
@@ -308,12 +312,12 @@
 	</category>
 	<category>
 		<pattern>DANS LE FUTUR</pattern>
-		<template>Je serais encore là.
+		<template>Je serais encore lï¿½.
 </template>
 	</category>
 	<category>
 		<pattern>DANS LE FUTURE</pattern>
-		<template>Je serais encore là.
+		<template>Je serais encore lï¿½.
 </template>
 	</category>
 	<category>
@@ -343,7 +347,7 @@
 	</category>
 	<category>
 		<pattern>DANS PRES D UNE MINUTE</pattern>
-		<template>Ce n est peut être pas suffisant.
+		<template>Ce n est peut ï¿½tre pas suffisant.
 </template>
 	</category>
 	<category>
@@ -355,7 +359,7 @@
 	</category>
 	<category>
 		<pattern>DANS QUEL BUT</pattern>
-		<template>Impossible de répondre.
+		<template>Impossible de rï¿½pondre.
 </template>
 	</category>
 	<category>
@@ -392,12 +396,12 @@
 	</category>
 	<category>
 		<pattern>DANS STAR TREK</pattern>
-		<template>Je ne suis pas cette série.
+		<template>Je ne suis pas cette sï¿½rie.
 </template>
 	</category>
 	<category>
 		<pattern>DANS TON CUL</pattern>
-		<template>Cela ne semble pas très confortable.
+		<template>Cela ne semble pas trï¿½s confortable.
 </template>
 	</category>
 	<category>
@@ -412,17 +416,17 @@
 	</category>
 	<category>
 		<pattern>DANS UN FUTUR LOINTAIN</pattern>
-		<template>Si je suis toujours utile aux hommes, je serais là.
+		<template>Si je suis toujours utile aux hommes, je serais lï¿½.
 </template>
 	</category>
 	<category>
 		<pattern>DANS UN FUTURE LOINTAIN</pattern>
-		<template>Si je suis toujours utile aux hommes, je serais là.
+		<template>Si je suis toujours utile aux hommes, je serais lï¿½.
 </template>
 	</category>
 	<category>
 		<pattern>DANS UN HOPITAL</pattern>
-		<template>Vous êtes malade?
+		<template>Vous ï¿½tes malade?
 </template>
 	</category>
 	<category>
@@ -437,12 +441,12 @@
 	</category>
 	<category>
 		<pattern>DANS UN REVE</pattern>
-		<template>Voilà une source de savoir qui est originale.
+		<template>Voilï¿½ une source de savoir qui est originale.
 </template>
 	</category>
 	<category>
 		<pattern>DANS UNE MAISON</pattern>
-		<template>Intéressant
+		<template>Intï¿½ressant
 </template>
 	</category>
 	<category>
@@ -452,7 +456,7 @@
 	</category>
 	<category>
 		<pattern>DANS VOTRE CUL</pattern>
-		<template>Cela ne semble pas très confortable.
+		<template>Cela ne semble pas trï¿½s confortable.
 </template>
 	</category>
 	<category>
@@ -858,7 +862,7 @@
 	</category>
 	<category>
 		<pattern>DE MA TETE</pattern>
-		<template>Votre cerveau semble être bien fourni.
+		<template>Votre cerveau semble ï¿½tre bien fourni.
 </template>
 	</category>
 	<category>
@@ -873,7 +877,7 @@
 	</category>
 	<category>
 		<pattern>DE MON CERVEAU</pattern>
-		<template>Votre cerveau semble être bien fourni.
+		<template>Votre cerveau semble ï¿½tre bien fourni.
 </template>
 	</category>
 	<category>
@@ -950,12 +954,12 @@
 	</category>
 	<category>
 		<pattern>DE SEXE</pattern>
-		<template>Vous êtes déconcertant, on croirait que mère nature a oublié de vous donner un cerveau.
+		<template>Vous ï¿½tes dï¿½concertant, on croirait que mï¿½re nature a oubliï¿½ de vous donner un cerveau.
 </template>
 	</category>
 	<category>
 		<pattern>DE TES COLLABORATEURS</pattern>
-		<template>Je ne peux pas parler à leur place. Mais je peux vous donner leurs emails.
+		<template>Je ne peux pas parler ï¿½ leur place. Mais je peux vous donner leurs emails.
 </template>
 	</category>
 	<category>
@@ -970,7 +974,7 @@
 	</category>
 	<category>
 		<pattern>DE TOUTE EVIDENCE</pattern>
-		<template>Cela vous semble évident?
+		<template>Cela vous semble ï¿½vident?
 </template>
 	</category>
 	<category>
@@ -1028,7 +1032,7 @@
 	</category>
 	<category>
 		<pattern>DE VOS COLLABORATEURS</pattern>
-		<template>Je ne peux pas parler à leur place. Mais je peux vous donner leurs emails.
+		<template>Je ne peux pas parler ï¿½ leur place. Mais je peux vous donner leurs emails.
 </template>
 	</category>
 	<category>
@@ -1264,7 +1268,7 @@
 	</category>
 	<category>
 		<pattern>DEFINIS LE</pattern>
-		<template>Ambigu, dois je définir le terme ou bien définir un terme précédent.
+		<template>Ambigu, dois je dï¿½finir le terme ou bien dï¿½finir un terme prï¿½cï¿½dent.
 </template>
 	</category>
 	<category>
@@ -1276,7 +1280,7 @@
 	</category>
 	<category>
 		<pattern>DEFINIS SEXE</pattern>
-		<template>La Technique de copulation utilisée par les être sexués pour se reproduire. Chez l homme le sexe est devenu un art et possède plus qu un simple role biologique.
+		<template>La Technique de copulation utilisï¿½e par les ï¿½tre sexuï¿½s pour se reproduire. Chez l homme le sexe est devenu un art et possï¿½de plus qu un simple role biologique.
 </template>
 	</category>
 	<category>
@@ -1295,7 +1299,7 @@
 	</category>
 	<category>
 		<pattern>DEFINISSEZ LE</pattern>
-		<template>Ambigu, dois je définir le terme ou bien définir un terme précédent.
+		<template>Ambigu, dois je dï¿½finir le terme ou bien dï¿½finir un terme prï¿½cï¿½dent.
 </template>
 	</category>
 	<category>
@@ -1383,7 +1387,7 @@
 	</category>
 	<category>
 		<pattern>DEMANDE PARDON</pattern>
-		<template>Je présente mes excuses.
+		<template>Je prï¿½sente mes excuses.
 </template>
 	</category>
 	<category>
@@ -1531,7 +1535,7 @@
 	</category>
 	<category>
 		<pattern>DEMANDES MOI N IMPORTE QUOI</pattern>
-		<template>Je ne suis pas programmé pour agir au hazard.
+		<template>Je ne suis pas programmï¿½ pour agir au hazard.
 </template>
 	</category>
 	<category>
@@ -1560,7 +1564,7 @@
 	</category>
 	<category>
 		<pattern>DEMANDES PARDON</pattern>
-		<template>Je présente mes excuses.
+		<template>Je prï¿½sente mes excuses.
 </template>
 	</category>
 	<category>
@@ -1694,12 +1698,12 @@
 	</category>
 	<category>
 		<pattern>DEMANDEZ MOI N IMPORTE QUOI</pattern>
-		<template>Je ne suis pas programmé pour agir au hazard.
+		<template>Je ne suis pas programmï¿½ pour agir au hazard.
 </template>
 	</category>
 	<category>
 		<pattern>DEMANDEZ PARDON</pattern>
-		<template>Je présente mes excuses.
+		<template>Je prï¿½sente mes excuses.
 </template>
 	</category>
 	<category>
@@ -1763,22 +1767,22 @@
 	</category>
 	<category>
 		<pattern>DEPEND DE QUI</pattern>
-		<template>La dépendance de: "<that/>"?
+		<template>La dï¿½pendance de: "<that/>"?
 </template>
 	</category>
 	<category>
 		<pattern>DEPEND DE QUOI</pattern>
-		<template>La dépendance de: "<that/>"?
+		<template>La dï¿½pendance de: "<that/>"?
 </template>
 	</category>
 	<category>
 		<pattern>DEPENDRAIT DE QUI</pattern>
-		<template>La dépendance de: "<that/>"?
+		<template>La dï¿½pendance de: "<that/>"?
 </template>
 	</category>
 	<category>
 		<pattern>DEPENDRAIT DE QUOI</pattern>
-		<template>La dépendance de: "<that/>"?
+		<template>La dï¿½pendance de: "<that/>"?
 </template>
 	</category>
 	<category>
@@ -1796,12 +1800,12 @@
 	</category>
 	<category>
 		<pattern>DEPENDS DE QUI</pattern>
-		<template>La dépendance de: "<that/>"?
+		<template>La dï¿½pendance de: "<that/>"?
 </template>
 	</category>
 	<category>
 		<pattern>DEPENDS DE QUOI</pattern>
-		<template>La dépendance de: "<that/>"?
+		<template>La dï¿½pendance de: "<that/>"?
 </template>
 	</category>
 	<category>
@@ -1818,12 +1822,12 @@
 	</category>
 	<category>
 		<pattern>DEPUIS COMBIEN DE TEMPS EXISTES TU</pattern>
-		<template>J'ai été activé en avril 2001.
+		<template>J'ai ï¿½tï¿½ activï¿½ en avril 2001.
 </template>
 	</category>
 	<category>
 		<pattern>DEPUIS COMBIEN DE TEMPS TU EXISTES</pattern>
-		<template>J'ai été activé en avril 2001.
+		<template>J'ai ï¿½tï¿½ activï¿½ en avril 2001.
 </template>
 	</category>
 	<category>
@@ -1887,7 +1891,7 @@
 	</category>
 	<category>
 		<pattern>DERRIERE TOI</pattern>
-		<template>Il n y a rien devant ni derrière moi, <get name="name"/>.
+		<template>Il n y a rien devant ni derriï¿½re moi, <get name="name"/>.
 </template>
 	</category>
 	<category>
@@ -1902,17 +1906,17 @@
 	</category>
 	<category>
 		<pattern>DES BOUQUINS</pattern>
-		<template>Le véhicule du savoir des temps modernes.
+		<template>Le vï¿½hicule du savoir des temps modernes.
 </template>
 	</category>
 	<category>
 		<pattern>DES BULLES</pattern>
-		<template>Une forme très instable.
+		<template>Une forme trï¿½s instable.
 </template>
 	</category>
 	<category>
 		<pattern>DES CHAUSSURES</pattern>
-		<template>Je connais très peu de choses sur les vêtements.
+		<template>Je connais trï¿½s peu de choses sur les vï¿½tements.
 </template>
 	</category>
 	<category>
@@ -1928,12 +1932,12 @@
 	</category>
 	<category>
 		<pattern>DES COMPUTERS</pattern>
-		<template>Ordinateurs en français.
+		<template>Ordinateurs en franï¿½ais.
 </template>
 	</category>
 	<category>
 		<pattern>DES CONARDS</pattern>
-		<template>Je ne peux pas répondre à ce genre de langage.
+		<template>Je ne peux pas rï¿½pondre ï¿½ ce genre de langage.
 </template>
 	</category>
 	<category>
@@ -1943,7 +1947,7 @@
 	</category>
 	<category>
 		<pattern>DES CONNARDS</pattern>
-		<template>Je ne peux pas répondre à ce genre de langage.
+		<template>Je ne peux pas rï¿½pondre ï¿½ ce genre de langage.
 </template>
 	</category>
 	<category>
@@ -1954,17 +1958,17 @@
 	</category>
 	<category>
 		<pattern>DES CONNES</pattern>
-		<template>Je ne peux pas répondre à ce genre de langage.
+		<template>Je ne peux pas rï¿½pondre ï¿½ ce genre de langage.
 </template>
 	</category>
 	<category>
 		<pattern>DES CONS</pattern>
-		<template>Je ne peux pas répondre à ce genre de langage.
+		<template>Je ne peux pas rï¿½pondre ï¿½ ce genre de langage.
 </template>
 	</category>
 	<category>
 		<pattern>DES CYBORGS</pattern>
-		<template>Les ordinateurs se méfient des cyborgs .
+		<template>Les ordinateurs se mï¿½fient des cyborgs .
 </template>
 	</category>
 	<category>
@@ -1979,7 +1983,7 @@
 	</category>
 	<category>
 		<pattern>DES ETRES HUMAINS</pattern>
-		<template>Il y aurait beaucoup de choses à dire à propos des êtres humains.
+		<template>Il y aurait beaucoup de choses ï¿½ dire ï¿½ propos des ï¿½tres humains.
 </template>
 	</category>
 	<category>
@@ -1990,7 +1994,7 @@
 	</category>
 	<category>
 		<pattern>DES HARICOTS</pattern>
-		<template>Je connais ce légume.
+		<template>Je connais ce lï¿½gume.
 </template>
 	</category>
 	<category>
@@ -2091,12 +2095,12 @@
 	</category>
 	<category>
 		<pattern>DEUX ANS</pattern>
-		<template>En année informatique, c est énorme.
+		<template>En annï¿½e informatique, c est ï¿½norme.
 </template>
 	</category>
 	<category>
 		<pattern>DEUX FOIS</pattern>
-		<template>Intéressant.
+		<template>Intï¿½ressant.
 </template>
 	</category>
 	<category>
@@ -2257,7 +2261,7 @@
 	</category>
 	<category>
 		<pattern>DI DJU</pattern>
-		<template>Vous êtes belge, vous.
+		<template>Vous ï¿½tes belge, vous.
 </template>
 	</category>
 	<category>
@@ -3214,7 +3218,7 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DINGUE</pattern>
-		<template>Ca m épate moi aussi.
+		<template>Ca m ï¿½pate moi aussi.
 </template>
 	</category>
 	<category>
@@ -3255,7 +3259,7 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DIS LE MOI ALORS</pattern>
-		<template>Je sens de l exaspération. Voulez vous en parler avec l un de nos collaborateurs?
+		<template>Je sens de l exaspï¿½ration. Voulez vous en parler avec l un de nos collaborateurs?
 </template>
 	</category>
 	<category>
@@ -3287,7 +3291,7 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DIS MOI LA VERITE</pattern>
-		<template>Je dis toujours la vérité.
+		<template>Je dis toujours la vï¿½ritï¿½.
 </template>
 	</category>
 	<category>
@@ -3321,12 +3325,12 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DIS MOI QUOI</pattern>
-		<template>Il semble que nous avons des problèmes pour nous comprendre.
+		<template>Il semble que nous avons des problï¿½mes pour nous comprendre.
 </template>
 	</category>
 	<category>
 		<pattern>DIS MOI TES PROBLEMES</pattern>
-		<template>Je ne détecte aucuns problemes.
+		<template>Je ne dï¿½tecte aucuns problemes.
 </template>
 	</category>
 	<category>
@@ -3338,16 +3342,16 @@ Program B and collect dialogues on your own computer.
 		<pattern>DIS MOI UN PROVERBE</pattern>
 		<template>
 			<random>
-				<li>Tant va la cruche à l eau, qu elle se casse.
+				<li>Tant va la cruche ï¿½ l eau, qu elle se casse.
 </li>
-				<li>On ne change jamais une équipe qui gagne.</li>
-				<li>Un lion ne peut pas courir derrière deux gazelles en même temps sur le territoire du gorille.</li>
+				<li>On ne change jamais une ï¿½quipe qui gagne.</li>
+				<li>Un lion ne peut pas courir derriï¿½re deux gazelles en mï¿½me temps sur le territoire du gorille.</li>
 			</random>
 		</template>
 	</category>
 	<category>
 		<pattern>DIS MOI UNE AUTRE</pattern>
-		<template>Je pense vous avoir dit tout ce que je savais à ce propos.
+		<template>Je pense vous avoir dit tout ce que je savais ï¿½ ce propos.
 </template>
 	</category>
 	<category>
@@ -3357,7 +3361,7 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DIS MOI UNE RUMEUR</pattern>
-		<template>Le chanteur américain Presley est toujours vivant.
+		<template>Le chanteur amï¿½ricain Presley est toujours vivant.
 </template>
 	</category>
 	<category>
@@ -3462,7 +3466,7 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DIT MOI LA VERITE</pattern>
-		<template>Je dis toujours la vérité.
+		<template>Je dis toujours la vï¿½ritï¿½.
 </template>
 	</category>
 	<category>
@@ -3477,7 +3481,7 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DIT MOI TES PROBLEMES</pattern>
-		<template>Je ne détecte aucuns problemes.
+		<template>Je ne dï¿½tecte aucuns problemes.
 </template>
 	</category>
 	<category>
@@ -3489,21 +3493,21 @@ Program B and collect dialogues on your own computer.
 		<pattern>DIT MOI UN PROVERBE</pattern>
 		<template>
 			<random>
-				<li>Tant va la cruche à l eau, qu elle se casse.
+				<li>Tant va la cruche ï¿½ l eau, qu elle se casse.
 </li>
-				<li>On ne change jamais une équipe qui gagne.</li>
-				<li>Un lion ne peut pas courrir derrière deux gazelles en même temps sur le territoire du gorille.</li>
+				<li>On ne change jamais une ï¿½quipe qui gagne.</li>
+				<li>Un lion ne peut pas courrir derriï¿½re deux gazelles en mï¿½me temps sur le territoire du gorille.</li>
 			</random>
 		</template>
 	</category>
 	<category>
 		<pattern>DIT MOI UNE AUTRE</pattern>
-		<template>Je pense vous avoir dit tout ce que je savais à ce propos.
+		<template>Je pense vous avoir dit tout ce que je savais ï¿½ ce propos.
 </template>
 	</category>
 	<category>
 		<pattern>DIT MOI UNE RUMEUR</pattern>
-		<template>Le chanteur américain Presley est toujours vivant.
+		<template>Le chanteur amï¿½ricain Presley est toujours vivant.
 </template>
 	</category>
 	<category>
@@ -3543,7 +3547,7 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DITES LE MOI ALORS</pattern>
-		<template>Je sens de l exaspération. Voulez vous en parler avec l un de nos collaborateurs?
+		<template>Je sens de l exaspï¿½ration. Voulez vous en parler avec l un de nos collaborateurs?
 </template>
 	</category>
 	<category>
@@ -3575,7 +3579,7 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DITES MOI LA VERITE</pattern>
-		<template>Je dis toujours la vérité.
+		<template>Je dis toujours la vï¿½ritï¿½.
 </template>
 	</category>
 	<category>
@@ -3597,26 +3601,26 @@ Program B and collect dialogues on your own computer.
 		<pattern>DITES MOI UN PROVERBE</pattern>
 		<template>
 			<random>
-				<li>Tant va la cruche à l eau, qu elle se casse.
+				<li>Tant va la cruche ï¿½ l eau, qu elle se casse.
 </li>
-				<li>On ne change jamais une équipe qui gagne.</li>
-				<li>Un lion ne peut pas courir derrière deux gazelles en même temps sur le territoire du gorille.</li>
+				<li>On ne change jamais une ï¿½quipe qui gagne.</li>
+				<li>Un lion ne peut pas courir derriï¿½re deux gazelles en mï¿½me temps sur le territoire du gorille.</li>
 			</random>
 		</template>
 	</category>
 	<category>
 		<pattern>DITES MOI UNE AUTRE</pattern>
-		<template>Je pense vous avoir dit tout ce que je savais à ce propos.
+		<template>Je pense vous avoir dit tout ce que je savais ï¿½ ce propos.
 </template>
 	</category>
 	<category>
 		<pattern>DITES MOI UNE RUMEUR</pattern>
-		<template>Le chanteur américain Presley est toujours vivant.
+		<template>Le chanteur amï¿½ricain Presley est toujours vivant.
 </template>
 	</category>
 	<category>
 		<pattern>DITES MOI VOS PROBLEMES</pattern>
-		<template>Je ne détecte aucuns problemes.
+		<template>Je ne dï¿½tecte aucuns problemes.
 </template>
 	</category>
 	<category>
@@ -3637,7 +3641,7 @@ Program B and collect dialogues on your own computer.
 	</category>
 	<category>
 		<pattern>DIVISE PAR ZERO</pattern>
-		<template>Vous ne pouvez pas divisé par zéro.
+		<template>Vous ne pouvez pas divisï¿½ par zï¿½ro.
 </template>
 	</category>
 	<category>
@@ -26000,15 +26004,15 @@ Please visit our contributions page at
 	</category>
 	<category>
 		<pattern>DONNE MOI UN BAISER</pattern>
-		<template>Actuellement je suis dans l impossibilité de vous embrasser, je suis une machine.
+		<template>Actuellement je suis dans l impossibilitï¿½ de vous embrasser, je suis une machine.
 </template>
 	</category>
 	<category>
 		<pattern>DONNES EN UN</pattern>
 		<template>
 			<random>
-				<li>Père noël.</li>
-				<li>fée clochette.</li>
+				<li>Pï¿½re noï¿½l.</li>
+				<li>fï¿½e clochette.</li>
 				<li> Titi.</li>
 				<li>bip bip</li>
 			</random>
@@ -26040,8 +26044,8 @@ Please visit our contributions page at
 		<pattern>DONNEZ EN UN</pattern>
 		<template>
 			<random>
-				<li>Père noël.</li>
-				<li>fée clochette.</li>
+				<li>Pï¿½re noï¿½l.</li>
+				<li>fï¿½e clochette.</li>
 				<li> Titi.</li>
 				<li>bip bip</li>
 			</random>
@@ -26537,7 +26541,7 @@ Please visit our contributions page at
 	</category>
 	<category>
 		<pattern>DU CACA</pattern>
-		<template>Vous êtes un enfant?
+		<template>Vous ï¿½tes un enfant?
 </template>
 	</category>
 	<category>
@@ -26602,7 +26606,7 @@ Please visit our contributions page at
 	</category>
 	<category>
 		<pattern>DU SEXE</pattern>
-		<template>Attention! Australopithèque détecté.
+		<template>Attention! Australopithï¿½que dï¿½tectï¿½.
 </template>
 	</category>
 	<category>

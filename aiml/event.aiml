@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aiml>
+ <topic name="event">
+<category>
+<pattern>*</pattern>
+<template><random>
+<li> 1. wedding </li>
+<li> 2. bday </li>
+
+</random>
+<think><set name="event"><set name="topic">event</set></set></think>
+
+</template></category>
+</topic>
+</aiml>
