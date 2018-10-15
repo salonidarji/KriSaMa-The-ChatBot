@@ -13,6 +13,7 @@ k.learn("aiml/under.aiml")
 k.learn("aiml/command.aiml")
 k.learn("aiml/greeting.aiml")
 k.learn("aiml/ai.aiml")
+k.learn("aiml/greetings.aiml")
 
 # set a constant
 
