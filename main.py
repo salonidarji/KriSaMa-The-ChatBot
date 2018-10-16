@@ -8,12 +8,12 @@ import sys
 k = aiml.Kernel()
 
 # load the aiml file download here http://www.alicebot.org/aiml/aaa/
-#k.learn("aiml/star.aiml")
-k.learn("aiml/under.aiml")
-k.learn("aiml/command.aiml")
-k.learn("aiml/greeting.aiml")
-k.learn("aiml/ai.aiml")
-k.learn("aiml/D.aiml")
+# k.learn("aiml/star.aiml")
+#k.learn("aiml/under.aiml")
+# k.learn("aiml/command.aiml")
+# k.learn("aiml/greeting.aiml")
+#k.learn("aiml/ai.aiml")
+# k.learn("aiml/D.aiml")
 k.learn("aiml/event.aiml")
 
 # set a constant
