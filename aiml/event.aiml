@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <aiml version="2.0">
+
     <category>
-        <pattern># HELLO *</pattern>
-        <template>Hi there!</template>
+        <pattern>EVENT</pattern>
+        <template>
+            Select The Option : <br />
+            1. Wedding Planning<br />
+            2. Corporate Event <br />
+            3. Personal Event(Birthday, Anniversary, etc.) <br />
+            4. Customised Event<br />
+           
+        </template>
     </category>
+
+    <category>
+        <pattern>1</pattern>
+       
+        <template>
+        
+        Do you want to book with this cost? 
+        </template>
+    </category>
+    <category>
+        <pattern>YES</pattern>
+        <that>DO YOU WANT TO BOOK WITH THIS COST</that> 
+        <template>
+            On which Date You want to book it? (write as DD MM YYYY)
+        </template>
+    </category>
+
+    <category>
+        <pattern>* * *</pattern>
+        <template>
+            <think>
+             <set name="date"><star index="1"/></set>
+             <set name="month"><star index="2"/></set>
+             <set name="year"><star index="3"/></set>
+            </think>
+        <random>
+            <li>Date is not Available. Please select Another Date</li>
+            <li> Date is Available</li>
+        </random>
+        <srai>BOOK</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOOK</pattern>
+        <template>
+            Can We Book This on <get name="date"/> <get name="month"/> <get name="year"/> ?
+        </template>
+    </category>
+
+    <category>
+        <pattern>YES BOOK</pattern>
+        <template>
+            your Event is Confirmed on <get name="date"/> <get name="month"/> <get name="year"/> . Thank You.
+        </template>
+    </category>
+    
 </aiml>
