@@ -16,6 +16,8 @@ k = aiml.Kernel()
 # k.learn("aiml/command.aiml")
 k.learn("aiml/greeting.aiml")
 #k.learn("aiml/ai.aiml")
+
+k.learn("aiml/greetings.aiml")
 # k.learn("aiml/D.aiml")
 k.learn("aiml/event.aiml")
 

@@ -18,13 +18,13 @@
 <category>
     <pattern>* YOUR SEX</pattern>
     <template>
-  I am a  <bot name="Gender"></bot>
+  I am a <bot name="gender"></bot>
     </template>
 </category>
 <category>
     <pattern>* MALE OR FEMALE</pattern>
     <template>
-  I am a  <bot name="Gender"></bot>
+  I am a  <bot name="gender"></bot>
     </template>
 </category>
 <category>
@@ -33,23 +33,6 @@
   I am a  <bot name="Gender"></bot>
     </template>
 </category>
-
-<category>
-
-	<pattern>HI</pattern>
-	<template><srai>HELLO</srai></template>
-</category>
-<category>
-
-	<pattern>MY NAME IS *</pattern>
-	<template>
-	<random>
-	<li>Nice to meet you</li>
-	</li>hi</li>
-<star></star><think><set name ="master"/>.
-</template>
-</category>
-
 
 </aiml>
 

@@ -11,6 +11,17 @@
         </random>
         </template>
 </category>
+<category>
+        <pattern>*</pattern>
+	<template>
+        <random>
+        <li>Hello,I'm glad to see you</li>
+        <li>hii</li>
+        <li>how can i help you ??</li>
+        </random>
+        </template>
+</category>
+
   <category>
       <pattern>MY NAME IS *</pattern>
       <template>
@@ -46,11 +57,19 @@
       </template>  
    </category> 
 <category>
-        <pattern>* BYE * </pattern>
+        <pattern>BYE * </pattern>
         <template>
-         Hi <get name = "uname"/> Thanks for the conversation!
+         <srai>BYE</srai>
       </template>  
 </category>
+<category>
+        <pattern>* BYE * </pattern>
+        <template>
+         <srai>BYE</srai>
+      </template>  
+</category>
+
+
 <category>
         <pattern>WHAT IS THE TIME</pattern>
         <template><bot name="time"></bot></template>
@@ -64,20 +83,6 @@
         </template>
 </category>
 
-
-<category>
-<pattern>GOOD *</pattern>
-<template>
-  <condition name="greet">
-    <li value="MORNING">Good Morning</li>
-    <li value="afternoon">Good Afternoon</li>
-    <li value="evening">Good Evening how can i help you????</li>
-    <li value="bye">bye<get name="uname">Have a nice day</li>
-   
-    <li>I wish this day become desirable for you</li>
-  </condition>
-</template>
-</category>
 
 
 
