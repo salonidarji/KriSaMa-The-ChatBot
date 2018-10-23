@@ -3,6 +3,9 @@ import aiml
 import subprocess
 import os
 import sys
+from datetime import datetime
+time=str(datetime.now())
+#date=str(datetime.date.today())
 
 #Robot brain will be in here :)
 k = aiml.Kernel()
@@ -11,7 +14,7 @@ k = aiml.Kernel()
 # k.learn("aiml/star.aiml")
 #k.learn("aiml/under.aiml")
 # k.learn("aiml/command.aiml")
-# k.learn("aiml/greeting.aiml")
+k.learn("aiml/greeting.aiml")
 #k.learn("aiml/ai.aiml")
 # k.learn("aiml/D.aiml")
 k.learn("aiml/event.aiml")
@@ -77,7 +80,12 @@ k.setBotPredicate("event","event")
 
 k.setBotPredicate("state","Vanuatu")
 
+k.setBotPredicate("time",time)
+
+
 k.setBotPredicate("website","wehackdem.blogspot.com")
+
+
 while True:
     userInput = input("(type quit for exit)  User : ") 
     

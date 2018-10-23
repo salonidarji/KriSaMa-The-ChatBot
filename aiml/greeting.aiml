@@ -1,15 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
  
-<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
-      xmlns:html="http://www.w3.org/1999/xhtml"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
- 
+<aiml version="2.0">
 <category>
-        <pattern>hello</pattern>
-	<template>Hello,   I'm glad to see you</template>
+        <pattern>HELLO</pattern>
+	<template>
+        <random>
+        <li>Hello,I'm glad to see you</li>
+        <li>hii</li>
+        <li>how can i help you ??</li>
+        </random>
+        </template>
 </category>
- 
+  <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+         Hello!<think><set name = "uname"> <star/></set></think>
+      </template>  
+   </category>  
+   
+   <category>
+      <pattern>GOOD MORNING</pattern>
+      <template>
+     hello and how's your morning going on
+      </template>  
+   </category>  
+
+   <category>
+      <pattern>GOOD AFTERNOON</pattern>
+      <template>
+      hii there!!!
+      </template>  
+   </category>  
+   
+   <category>
+      <pattern>GOOD EVENING</pattern>
+      <template>
+       hii there!! good evening
+      </template>  
+   </category>  
+   
+   <category>
+      <pattern>BYE</pattern>
+      <template>
+         Hi <get name = "uname"/> Thanks for the conversation!
+      </template>  
+   </category> 
+<category>
+        <pattern>* BYE * </pattern>
+        <template>
+         Hi <get name = "uname"/> Thanks for the conversation!
+      </template>  
+</category>
+<category>
+        <pattern>WHAT IS THE TIME</pattern>
+        <template><bot name="time"></bot></template>
+</category>
+
+
+<category>
+        <pattern>DAY</pattern>
+        <template>Today is
+            <date format="%A"/>
+        </template>
+</category>
+
+
+<category>
+<pattern>GOOD *</pattern>
+<template>
+  <condition name="greet">
+    <li value="MORNING">Good Morning</li>
+    <li value="afternoon">Good Afternoon</li>
+    <li value="evening">Good Evening how can i help you????</li>
+    <li value="bye">bye<get name="uname">Have a nice day</li>
+   
+    <li>I wish this day become desirable for you</li>
+  </condition>
+</template>
+</category>
+
+
+
+
+
+
+
+
 <category>
         <pattern>WHAT IS YOUR NAME</pattern>
         <template>My name is <bot name="name"></bot></template>
