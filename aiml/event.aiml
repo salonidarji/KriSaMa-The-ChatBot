@@ -3,11 +3,15 @@
 <aiml version="2.0">
 
     <category>
-        <pattern>HELLO *</pattern>
-        <template>Hi there!</template>
-        <pattern>HELLO</pattern>
-        <template>Hi</template>
-    
+        <pattern>EVENT</pattern>
+        <template>
+            Select The Option : <br />
+            1. Wedding Planning<br />
+            2. Corporate Event <br />
+            3. Personal Event(Birthday, Anniversary, etc.) <br />
+            4. Customised Event<br />
+           
+        </template>
     </category>
 
     <category>
@@ -27,7 +31,7 @@
     </category>
 
     <category>
-        <pattern>can we book on??</pattern>
+        <pattern>* * *</pattern>
         <template>
             <think>
              <set name="date"><star index="1"/></set>
