@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <aiml version="2.0">
-
+<category>
+        <pattern>*</pattern>
+        <template>
+            <set name="topic"><set name="temp"><star/></set></set>
+        </template>
+    </category>
+<topic name="EVENT">
     <category>
         <pattern>EVENT</pattern>
         <template>
@@ -13,23 +19,107 @@
            
         </template>
     </category>
+    <category>
+        <pattern>* EVENT</pattern>
+        <template>
+            Select The Option : <br />
+            1. Wedding Planning<br />
+            2. Corporate Event <br />
+            3. Personal Event(Birthday, Anniversary, etc.) <br />
+            4. Customised Event<br />
+           
+        </template>
+    </category>
 
+    <category>
+        <pattern>EVENT *</pattern>
+        <template>
+            Select The Option : <br />
+            1. Wedding Planning<br />
+            2. Corporate Event <br />
+            3. Personal Event(Birthday, Anniversary, etc.) <br />
+            4. Customised Event<br />
+           
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* EVENT *</pattern>
+        <template>
+            Select The Option : <br />
+            1. Wedding Planning<br />
+            2. Corporate Event <br />
+            3. Personal Event(Birthday, Anniversary, etc.) <br />
+            4. Customised Event<br />
+           
+        </template>
+    </category>
+</topic>
     <category>
         <pattern>1</pattern>
        
         <template>
-        
-        Do you want to book with this cost? 
+        we have 3 packages platinum,gold and silver which one you want??
+        <set name="topic">packages</set>
+      
         </template>
     </category>
+    
+    
+<topic name="PACKAGES">
     <category>
-        <pattern>YES</pattern>
-        <that>DO YOU WANT TO BOOK WITH THIS COST</that> 
+        <pattern>* GOLD</pattern>
         <template>
-            On which Date You want to book it? (write as DD MM YYYY)
+            ohkk your packge is chosen anything else
+            <set name="p">gold</set>
+            <set name="topic">cost</set>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* PLATINUM</pattern>
+        <template>
+        <set name="p">platinum</set>
+        <srai>* GOLD</srai>
         </template>
     </category>
 
+    
+    <category>
+        <pattern>* SILVER</pattern>
+        <template>
+           <set name="p">silver</set>
+        <srai>* GOLD</srai>
+        </template>
+    </category>
+</topic>
+<topic name="COST">
+
+    <category>
+        <pattern>* COST *</pattern>
+        
+        <template>
+        <condition>
+        <li name="p" value="gold">300000</li>
+        <li name="p" value="platinum">500000</li>
+        <li name="p" value="silver">200000</li>
+        </condition>        
+        </template>
+    </category>
+
+ </topic>
+
+    <category>
+        <pattern>BOOK MY EVENT</pattern>
+        <that>DO YOU WANT TO BOOK WITH THIS COST</that> 
+
+        <template>
+            On which Date You want to book it? (write as DD MM YYYY)
+            <set name="topic">bookdate</set>
+        </template>
+
+    </category>
+<topic name="BOOKDATE">
     <category>
         <pattern>* * *</pattern>
         <template>
@@ -40,12 +130,12 @@
             </think>
         <random>
             <li>Date is not Available. Please select Another Date</li>
-            <li> Date is Available</li>
+            <li>Date is Available</li>
         </random>
         <srai>BOOK</srai>
         </template>
     </category>
-
+</topic>
     <category>
         <pattern>BOOK</pattern>
         <template>
