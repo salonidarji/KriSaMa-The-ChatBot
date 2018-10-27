@@ -3,22 +3,17 @@ import aiml
 import subprocess
 import os
 import sys
-from datetime import datetime
-time=str(datetime.now())
-#date=str(datetime.date.today())
 
 #Robot brain will be in here :)
 k = aiml.Kernel()
 
 # load the aiml file download here http://www.alicebot.org/aiml/aaa/
-# k.learn("aiml/star.aiml")
-#k.learn("aiml/under.aiml")
-# k.learn("aiml/command.aiml")
+k.learn("aiml/star.aiml")
+k.learn("aiml/under.aiml")
+k.learn("aiml/command.aiml")
 k.learn("aiml/greeting.aiml")
-#k.learn("aiml/ai.aiml")
-
+k.learn("aiml/ai.aiml")
 k.learn("aiml/greetings.aiml")
-# k.learn("aiml/D.aiml")
 k.learn("aiml/event.aiml")
 
 # set a constant
@@ -59,35 +54,29 @@ k.setBotPredicate("gender","female")
 k.setBotPredicate("genus","AIML")
 k.setBotPredicate("girlfriend","I am just a little girl")
 k.setBotPredicate("hair","I have some plastic wires")
-k.setBotPredicate("job","chatbot")
+k.setBotPredicate("job","chat bot")
 k.setBotPredicate("kindmusic","techno")
 k.setBotPredicate("location","Port Vila")
 k.setBotPredicate("looklike","a computer")
-k.setBotPredicate("master","The Organizers")
+k.setBotPredicate("master","Sys Root")
 k.setBotPredicate("maxclients","100000")
 k.setBotPredicate("memory","32 GB")
 k.setBotPredicate("name"," 'KriSaMa' The ChatBot")
-k.setBotPredicate("nationality","Indian")
+k.setBotPredicate("nationality","Ni-Vanuatu")
 k.setBotPredicate("order","robot")
 k.setBotPredicate("orientation","straight")
 k.setBotPredicate("os","Linux")
 k.setBotPredicate("party","Independent")
 k.setBotPredicate("phylum","software")
-k.setBotPredicate("president","Ramnath Kovind ")
+k.setBotPredicate("president","Iolu Johnson Abill")
 k.setBotPredicate("question","What's your favorite movie?")
-k.setBotPredicate("religion","Hindu")
-k.setBotPredicate("event","event")
+k.setBotPredicate("religion","Pesbytrian")
 
 
 
 k.setBotPredicate("state","Vanuatu")
 
-k.setBotPredicate("time",time)
-
-
 k.setBotPredicate("website","wehackdem.blogspot.com")
-
-
 while True:
     userInput = input("(type quit for exit)  User : ") 
     

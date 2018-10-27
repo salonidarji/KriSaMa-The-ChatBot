@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <aiml version="2.0">
-<category>
+<!-- <category>
         <pattern>*</pattern>
         <template>
-            <set name="topic"><set name="temp"><star/></set></set>
+             <set name="topic"><set name="temp"></set></set>
         </template>
-    </category>
-<topic name="EVENT">
+    </category> -->
+<!-- <topic name="EVENT"> -->
     <category>
         <pattern>EVENT</pattern>
         <template>
@@ -54,7 +54,7 @@
            
         </template>
     </category>
-</topic>
+<!-- </topic> -->
     <category>
         <pattern>1</pattern>
        
@@ -64,14 +64,28 @@
       
         </template>
     </category>
+
+    <category>
+    <pattern>2</pattern>
+       <template>
+          we have 3 packages platinum,gold and silver which one you want??
+        </template>
+    </category>
     
+    <category>
+        <pattern>3</pattern>
+       
+        <template>
+        we have 3 packages platinum,gold and silver which one you want??
+        </template>
+    </category>
     
 <topic name="PACKAGES">
     <category>
         <pattern>* GOLD</pattern>
         <template>
             ohkk your packge is chosen anything else
-            <set name="p">gold</set>
+            <set name="g">gold</set>
             <set name="topic">cost</set>
         </template>
     </category>
@@ -80,7 +94,8 @@
         <pattern>* PLATINUM</pattern>
         <template>
         <set name="p">platinum</set>
-        <srai>* GOLD</srai>
+        ohkk your packge is chosen anything else
+        <set name="topic">cost</set>
         </template>
     </category>
 
@@ -88,9 +103,11 @@
     <category>
         <pattern>* SILVER</pattern>
         <template>
-           <set name="p">silver</set>
-        <srai>* GOLD</srai>
+           <set name="s">silver</set>
+           ohkk your packge is chosen anything else
+        <set name="topic">cost</set>
         </template>
+
     </category>
 </topic>
 <topic name="COST">
@@ -100,9 +117,9 @@
         
         <template>
         <condition>
-        <li name="p" value="gold">300000</li>
+        <li name="g" value="gold">300000</li>
         <li name="p" value="platinum">500000</li>
-        <li name="p" value="silver">200000</li>
+        <li name="s" value="silver">200000</li>
         </condition>        
         </template>
     </category>
