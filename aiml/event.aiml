@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <aiml version="2.0">
-<!-- <category>
-        <pattern>*</pattern>
-        <template>
-             <set name="topic"><set name="temp"></set></set>
-        </template>
-    </category> -->
-<!-- <topic name="EVENT"> -->
+
+
     <category>
         <pattern>EVENT</pattern>
         <template>
@@ -22,53 +17,40 @@
     <category>
         <pattern>* EVENT</pattern>
         <template>
-            Select The Option : <br />
-            1. Wedding Planning<br />
-            2. Corporate Event <br />
-            3. Personal Event(Birthday, Anniversary, etc.) <br />
-            4. Customised Event<br />
-           
+            <srai>EVENT</srai>
         </template>
     </category>
 
     <category>
         <pattern>EVENT *</pattern>
         <template>
-            Select The Option : <br />
-            1. Wedding Planning<br />
-            2. Corporate Event <br />
-            3. Personal Event(Birthday, Anniversary, etc.) <br />
-            4. Customised Event<br />
-           
+        <srai>EVENT</srai>
         </template>
     </category>
     
     <category>
         <pattern>* EVENT *</pattern>
-        <template>
-            Select The Option : <br />
-            1. Wedding Planning<br />
-            2. Corporate Event <br />
-            3. Personal Event(Birthday, Anniversary, etc.) <br />
-            4. Customised Event<br />
-           
+        <template><srai>EVENT</srai>
         </template>
     </category>
-<!-- </topic> -->
+
     <category>
         <pattern>1</pattern>
        
         <template>
         we have 3 packages platinum,gold and silver which one you want??
-        <set name="topic">packages</set>
-      
+          <set name="topic">packages</set>   
         </template>
+    
     </category>
-
+    
+    
     <category>
-    <pattern>2</pattern>
-       <template>
-          we have 3 packages platinum,gold and silver which one you want??
+        <pattern>2</pattern>
+       
+        <template>
+       <srai>1</srai>
+      
         </template>
     </category>
     
@@ -76,7 +58,7 @@
         <pattern>3</pattern>
        
         <template>
-        we have 3 packages platinum,gold and silver which one you want??
+        <srai>1</srai>
         </template>
     </category>
     
@@ -86,16 +68,16 @@
         <template>
             ohkk your packge is chosen anything else
             <set name="g">gold</set>
-            <set name="topic">cost</set>
+            
         </template>
     </category>
     
     <category>
+    
         <pattern>* PLATINUM</pattern>
         <template>
         <set name="p">platinum</set>
-        ohkk your packge is chosen anything else
-        <set name="topic">cost</set>
+            ohkk your packge is chosen anything else
         </template>
     </category>
 
@@ -104,13 +86,12 @@
         <pattern>* SILVER</pattern>
         <template>
            <set name="s">silver</set>
-           ohkk your packge is chosen anything else
-        <set name="topic">cost</set>
-        </template>
 
+            ohkk your packge is chosen anything else
+        </template>
     </category>
 </topic>
-<topic name="COST">
+
 
     <category>
         <pattern>* COST *</pattern>
@@ -124,11 +105,10 @@
         </template>
     </category>
 
- </topic>
+ 
 
     <category>
-        <pattern>BOOK MY EVENT</pattern>
-        <that>DO YOU WANT TO BOOK WITH THIS COST</that> 
+        <pattern>* BOOK</pattern>
 
         <template>
             On which Date You want to book it? (write as DD MM YYYY)
@@ -161,7 +141,7 @@
     </category>
 
     <category>
-        <pattern>YES BOOK</pattern>
+        <pattern>YES</pattern>
         <template>
             your Event is Confirmed on <get name="date"/> <get name="month"/> <get name="year"/> . Thank You.
         </template>
