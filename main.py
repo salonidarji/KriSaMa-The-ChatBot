@@ -3,11 +3,12 @@ import aiml
 import subprocess
 import os
 import sys
+from gtts import gTTS
+from playsound import playsound
 
 #Robot brain will be in here :)
 k = aiml.Kernel()
 
-# load the aiml file download here http://www.alicebot.org/aiml/aaa/
 k.learn("aiml/star.aiml")
 k.learn("aiml/under.aiml")
 k.learn("aiml/command.aiml")
@@ -70,13 +71,14 @@ k.setBotPredicate("party","Independent")
 k.setBotPredicate("phylum","software")
 k.setBotPredicate("president","Iolu Johnson Abill")
 k.setBotPredicate("question","What's your favorite movie?")
-k.setBotPredicate("religion","Pesbytrian")
+k.setBotPredicate("religion","hindu")
 
 
 
 k.setBotPredicate("state","Vanuatu")
 
 k.setBotPredicate("website","wehackdem.blogspot.com")
+i = "0"
 while True:
     userInput = input("(type quit for exit)  User : ") 
     
@@ -85,7 +87,14 @@ while True:
       sys.exit(0) 
     response = k.respond(userInput) 
     print ('KRISAMA: '+response+'\n')
-     
+    
+    texttospeech = gTTS(text=response , lang='en')
+    print("sample"+ i +".mp3")
+    fileName = "sample" + i + ".mp3"
+    texttospeech.save(fileName)
+    playsound(fileName)
+    os.remove(fileName)
+    i = i + "1"
     # and as speech
     #print commands.getoutput("/usr/bin/espeak -v en+f4 -p 99 -s 160 2>/dev/null \" " + response + " \")
     #("espeak --stdout \"" + response + "\" | aplay")
