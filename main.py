@@ -89,7 +89,7 @@ while True:
     print ('KRISAMA: '+response+'\n')
     
     texttospeech = gTTS(text=response , lang='en')
-    print("sample"+ i +".mp3")
+    
     fileName = "sample" + i + ".mp3"
     texttospeech.save(fileName)
     playsound(fileName)
