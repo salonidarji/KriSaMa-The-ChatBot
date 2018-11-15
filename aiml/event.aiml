@@ -39,7 +39,7 @@
        
         <template>
         we have 3 packages platinum,gold and silver which one you want??
-          <set name="topic">packages</set>   
+         
         </template>
     
     </category>
@@ -62,19 +62,72 @@
         </template>
     </category>
     
+    <category>
+        <pattern>4</pattern>
+        <template>
+        ok tell us what type of event you want
+        <set name="topic">specifically</set>
+        </template>
+    </category>
+<topic name="SPECIFICALLY">
+    <category>
+        <pattern>I DON'T LIKE *</pattern>
+        <template>
+            ok tell us what yu want.
+        </template>
+    </category>
+
+    <category>
+        <pattern>I WANT *</pattern>
+        <template>
+            ok we will include it in your package
+        </template>
+    </category>
+    <category>
+        <pattern>I LIKE *</pattern>
+        <template>
+         ok then do you want to include <star/> in your package.?
+        </template>
+    </category>
+        
+</topic>
+
+    
 <topic name="PACKAGES">
+    <category>
+        <pattern>GOLD</pattern>
+        <template>
+            
+            ohkk your         
+            <set name="g">gold</set>
+             packge is chosen with the <set name="topic">cost</set>
+
+        
+        </template>
+    </category>
     <category>
         <pattern>* GOLD</pattern>
         <template>
-            ohkk your packge is chosen anything else
-            <set name="g">gold</set>
-            
+            <srai>GOLD</srai>
         </template>
     </category>
     
     <category>
+        <pattern>GOLD *</pattern>
+        <template>
+            <srai>GOLD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* GOLD *</pattern>
+        <template>
+            <srai>GOLD</srai>
+        </template>
+    </category>
+     
+    <category>
     
-        <pattern>* PLATINUM</pattern>
+        <pattern>PLATINUM</pattern>
         <template>
         <set name="p">platinum</set>
             ohkk your packge is chosen anything else
@@ -83,16 +136,64 @@
 
     
     <category>
-        <pattern>* SILVER</pattern>
+    
+        <pattern>* PLATINUM</pattern>
+        <template>
+            <srai>PLATINUM</srai>
+        </template>
+    </category>
+
+    
+    <category>
+    
+        <pattern>PLATINUM *</pattern>
+        <template>
+            <srai>PLATINUM</srai>
+        </template>
+    </category>
+    <category>
+    
+        <pattern>* PLATINUM *</pattern>
+        <template>
+        <srai>PLATINUM</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SILVER</pattern>
         <template>
            <set name="s">silver</set>
-
             ohkk your packge is chosen anything else
         </template>
     </category>
+    
+    <category>
+        <pattern>* SILVER</pattern>
+        <template>
+        <srai>SILVER</srai>
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>* SILVER *</pattern>
+        <template>
+                <srai>SILVER</srai>
+        
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>SILVER *</pattern>
+        <template>        
+                <srai>SILVER</srai>
+        </template>
+    </category>
+
 </topic>
 
-
+<topic name="COST">
     <category>
         <pattern>* COST *</pattern>
         
@@ -105,7 +206,7 @@
         </template>
     </category>
 
- 
+ </topic>
 
     <category>
         <pattern>* BOOK</pattern>

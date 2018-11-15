@@ -53,7 +53,7 @@
    <category>
       <pattern>BYE</pattern>
       <template>
-         Hi <get name = "uname"/> Thanks for the conversation!
+         Bye <get name = "uname"/> Thanks for the conversation!
       </template>  
    </category> 
 <category>
