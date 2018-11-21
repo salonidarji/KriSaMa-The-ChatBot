@@ -5,8 +5,7 @@
         <pattern>HELLO</pattern>
 	<template>
         <random>
-        <li>Hello,I'm glad to see you</li>
-        <li>Hi</li>
+        <li>Hey,I'm glad to see you</li>
         <li>how can i help you ??</li>
         </random>
         </template>

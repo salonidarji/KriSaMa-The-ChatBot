@@ -106,7 +106,7 @@
     <category>
         <pattern>GOLD</pattern>
         <template>
-              <set name="topic">information</set>
+              <set name="topic">detail</set>
   
             ok your         
             <set name="g">gold</set>
@@ -142,7 +142,7 @@
     
         <pattern>PLATINUM</pattern>
         <template>
-          <set name="topic">information</set>
+          <set name="topic">detail</set>
   
             ok your         
              <set name="p">platinum</set>
@@ -179,7 +179,7 @@
     <category>
         <pattern>SILVER</pattern>
         <template>
-             <set name="topic">information</set>
+             <set name="topic">detail</set>
   
             ok your         
              <set name="s">silver</set>
@@ -213,145 +213,31 @@
 
 </topic>
 
-
-
-<topic name="INFORMATION">    
-  
-  
-      <category>
-        <pattern>GOLD</pattern>
-        <template>
-            we provide these much features in GOLD package
-            -baloons - the color of  baloons are chosen as per availability
-            -decoration-30000
-            -catering-50000
-                menu will be fixed and no change will be made in it 
-
-            if you want change you can go to our customized order
-            
-        </template>
-    </category>
-  
-  
-    <category>
-        <pattern>* GOLD</pattern>
-        <template>
-            <srai>GOLD</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>GOLD *</pattern>
-        <template>
-            <srai>GOLD</srai>
-        </template>
-    </category>
-    <category>
-        <pattern>* GOLD *</pattern>
-        <template>
-            <srai>GOLD</srai>
-        </template>
-    </category>
-     
-    <category>
-    
-        <pattern>PLATINUM</pattern>
-        <template>
-         we provide these much features in PLATINUM package
-            -baloons - the color of  baloons are chosen as per availability
-            -decoration-30000
-            -catering-50000
-                menu will be fixed and no change will be made in it 
-
-            if you want change you can go to our customized order
-            
-
-        </template>
-    </category>
-
-    
-    <category>
-    
-        <pattern>* PLATINUM</pattern>
-        <template>
-            <srai>PLATINUM</srai>
-        </template>
-    </category>
-
-    
-    <category>
-    
-        <pattern>PLATINUM *</pattern>
-        <template>
-            <srai>PLATINUM</srai>
-        </template>
-    </category>
-    <category>
-    
-        <pattern>* PLATINUM *</pattern>
-        <template>
-        <srai>PLATINUM</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>SILVER</pattern>
-        <template>
-                       we provide these much features in SILVER package
-            -baloons - the color of  baloons are chosen as per availability
-            -decoration-30000
-            -catering-50000
-                menu will be fixed and no change will be made in it 
-
-            if you want change you can go to our customized order
-            
-
-        </template>
-    </category>
-    
-    <category>
-        <pattern>* SILVER</pattern>
-        <template>
-        <srai>SILVER</srai>
-        </template>
-    </category>
-
-    
-    <category>
-        <pattern>* SILVER *</pattern>
-        <template>
-                <srai>SILVER</srai>
-        
-        </template>
-    </category>
-
-    
-    <category>
-        <pattern>SILVER *</pattern>
-        <template>        
-                <srai>SILVER</srai>
-        </template>
-    </category>
-
-</topic>
-
-
-
-
-
-
-
-
-
 <topic name="COST">
     <category>
         <pattern>* COST *</pattern>
         
         <template>
         <condition>
-        <li name="g" value="gold">300000</li>
-        <li name="p" value="platinum">500000</li>
-        <li name="s" value="silver">200000</li>
+        <li name="g" value="gold">
+            Detail cost includes,
+            Decoration  200000 rupees
+            Catering 100000 rupees
+            So the Total Cost Will Be 300000 rupees
+        </li>
+        <li name="p" value="platinum">
+        Detail cost includes,
+             Decoration  300000 rupees
+            Catering 200000 rupees
+
+            So the Total Cost Will Be 500000
+        </li>
+        <li name="s" value="silver">
+        Detail cost includes,
+             Decoration 200000 rupees
+            Catering 200000 rupees
+            So the Total Cost Will Be 200000 rupees
+        </li>
         </condition>        
         </template>
     </category>

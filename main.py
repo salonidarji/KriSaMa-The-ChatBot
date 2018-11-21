@@ -97,11 +97,10 @@ while True:
     playsound(fileName)
     os.remove(fileName)
     i = i + "1"
-    # and as speech
-    #print commands.getoutput("/usr/bin/espeak -v en+f4 -p 99 -s 160 2>/dev/null \" " + response + " \")
-    #("espeak --stdout \"" + response + "\" | aplay")
-    #("/usr/bin/espeak -v en+f4 -p 99 -s 160 \"" + response + "\" | aplay")
     
+
+    # and as speech
+   
    #for command
     if response == "starting up firefox":
      os.system("firefox") 
