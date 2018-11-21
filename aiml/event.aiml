@@ -9,8 +9,8 @@
             Select The Option : <br />
             1. Wedding Planning<br />
             2. Corporate Event <br />
-            3. Personal Event(Birthday, Anniversary, etc.) <br />
-            4. Customised Event<br />
+            3. Personal Event(Like Birthday, Anniversary, etc.) <br />
+            4. Customised Order<br />
            
         </template>
     </category>
@@ -38,7 +38,8 @@
         <pattern>1</pattern>
        
         <template>
-        we have 3 packages platinum,gold and silver which one you want??
+        we have 3 <set name="topic">packages</set> platinum,gold and silver which one you want?
+         
          
         </template>
     
@@ -62,10 +63,12 @@
         </template>
     </category>
     
-    <category>
+    
+        
+ <category>
         <pattern>4</pattern>
         <template>
-        ok tell us what type of event you want
+        Tell me what customisation you want
         <set name="topic">specifically</set>
         </template>
     </category>
@@ -73,14 +76,14 @@
     <category>
         <pattern>I DON'T LIKE *</pattern>
         <template>
-            ok tell us what yu want.
+            ok tell us what you want.
         </template>
     </category>
 
     <category>
         <pattern>I WANT *</pattern>
         <template>
-            ok we will include it in your package
+            The cost for <star/> 10000 . Do you want to Add it to Your Package
         </template>
     </category>
     <category>
@@ -89,22 +92,32 @@
          ok then do you want to include <star/> in your package.?
         </template>
     </category>
+  
+<category>
+    <pattern>YES *</pattern>
+    <template><srai>YES</srai></template>
+</category>
         
 </topic>
 
+   
     
 <topic name="PACKAGES">
     <category>
         <pattern>GOLD</pattern>
         <template>
-            
-            ohkk your         
+              <set name="topic">information</set>
+  
+            ok your         
             <set name="g">gold</set>
-             packge is chosen with the <set name="topic">cost</set>
+             package is chosen with the <set name="topic">cost</set> 300000
 
         
         </template>
     </category>
+   
+   
+   
     <category>
         <pattern>* GOLD</pattern>
         <template>
@@ -129,8 +142,12 @@
     
         <pattern>PLATINUM</pattern>
         <template>
-        <set name="p">platinum</set>
-            ohkk your packge is chosen anything else
+          <set name="topic">information</set>
+  
+            ok your         
+             <set name="p">platinum</set>
+         package is chosen with the <set name="topic">cost</set> 500000
+        we will include decoration,catering service 
         </template>
     </category>
 
@@ -162,8 +179,11 @@
     <category>
         <pattern>SILVER</pattern>
         <template>
-           <set name="s">silver</set>
-            ohkk your packge is chosen anything else
+             <set name="topic">information</set>
+  
+            ok your         
+             <set name="s">silver</set>
+         package is chosen with the <set name="topic">cost</set> 200000
         </template>
     </category>
     
@@ -192,6 +212,136 @@
     </category>
 
 </topic>
+
+
+
+<topic name="INFORMATION">    
+  
+  
+      <category>
+        <pattern>GOLD</pattern>
+        <template>
+            we provide these much features in GOLD package
+            -baloons - the color of  baloons are chosen as per availability
+            -decoration-30000
+            -catering-50000
+                menu will be fixed and no change will be made in it 
+
+            if you want change you can go to our customized order
+            
+        </template>
+    </category>
+  
+  
+    <category>
+        <pattern>* GOLD</pattern>
+        <template>
+            <srai>GOLD</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>GOLD *</pattern>
+        <template>
+            <srai>GOLD</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* GOLD *</pattern>
+        <template>
+            <srai>GOLD</srai>
+        </template>
+    </category>
+     
+    <category>
+    
+        <pattern>PLATINUM</pattern>
+        <template>
+         we provide these much features in PLATINUM package
+            -baloons - the color of  baloons are chosen as per availability
+            -decoration-30000
+            -catering-50000
+                menu will be fixed and no change will be made in it 
+
+            if you want change you can go to our customized order
+            
+
+        </template>
+    </category>
+
+    
+    <category>
+    
+        <pattern>* PLATINUM</pattern>
+        <template>
+            <srai>PLATINUM</srai>
+        </template>
+    </category>
+
+    
+    <category>
+    
+        <pattern>PLATINUM *</pattern>
+        <template>
+            <srai>PLATINUM</srai>
+        </template>
+    </category>
+    <category>
+    
+        <pattern>* PLATINUM *</pattern>
+        <template>
+        <srai>PLATINUM</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SILVER</pattern>
+        <template>
+                       we provide these much features in SILVER package
+            -baloons - the color of  baloons are chosen as per availability
+            -decoration-30000
+            -catering-50000
+                menu will be fixed and no change will be made in it 
+
+            if you want change you can go to our customized order
+            
+
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* SILVER</pattern>
+        <template>
+        <srai>SILVER</srai>
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>* SILVER *</pattern>
+        <template>
+                <srai>SILVER</srai>
+        
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>SILVER *</pattern>
+        <template>        
+                <srai>SILVER</srai>
+        </template>
+    </category>
+
+</topic>
+
+
+
+
+
+
+
+
 
 <topic name="COST">
     <category>
@@ -247,5 +397,5 @@
             your Event is Confirmed on <get name="date"/> <get name="month"/> <get name="year"/> . Thank You.
         </template>
     </category>
-    
+
 </aiml>

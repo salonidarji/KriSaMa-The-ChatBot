@@ -9,13 +9,15 @@ from playsound import playsound
 #Robot brain will be in here :)
 k = aiml.Kernel()
 
-k.learn("aiml/star.aiml")
-k.learn("aiml/under.aiml")
-k.learn("aiml/command.aiml")
-k.learn("aiml/greeting.aiml")
+# k.learn("aiml/star.aiml")
+# k.learn("aiml/under.aiml")
+# k.learn("aiml/command.aiml")
 k.learn("aiml/ai.aiml")
 k.learn("aiml/greetings.aiml")
 k.learn("aiml/event.aiml")
+k.learn("aiml/greeting.aiml")
+
+#k.learn("aiml/customise.aiml")
 
 # set a constant
 

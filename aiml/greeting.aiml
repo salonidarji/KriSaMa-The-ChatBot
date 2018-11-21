@@ -6,7 +6,7 @@
 	<template>
         <random>
         <li>Hello,I'm glad to see you</li>
-        <li>hii</li>
+        <li>Hi</li>
         <li>how can i help you ??</li>
         </random>
         </template>
@@ -15,12 +15,11 @@
         <pattern>*</pattern>
 	<template>
         <random>
-        <li>Hello,I'm glad to see you</li>
-        <li>hii</li>
-        <li>how can i help you ??</li>
+     
+        <li>hey ,how can i help you ??</li>
         </random>
         </template>
-</category>
+</category> 
 
   <category>
       <pattern>MY NAME IS *</pattern>
