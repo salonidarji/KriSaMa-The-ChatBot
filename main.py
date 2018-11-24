@@ -5,6 +5,7 @@ import os
 import sys
 from gtts import gTTS
 from playsound import playsound
+import speech_recognition as sr
 
 #Robot brain will be in here :)
 k = aiml.Kernel()
@@ -81,9 +82,29 @@ k.setBotPredicate("state","Vanuatu")
 
 k.setBotPredicate("website","wehackdem.blogspot.com")
 i = "0"
+
+print("Do You Want to Speak or Type? (Enter 1 for Speak And 2 for Type)")
+choice = input("Enter 1 or 2: ")
 while True:
-    userInput = input("(type quit for exit)  User : ") 
-    
+   # print("choice="+choice)
+    if choice == '1':
+      r = sr.Recognizer()
+      with sr.Microphone() as source:
+        print("(Speak quit for exit)  User : ")
+        audio = r.listen(source)
+      try:
+        req = r.recognize_google(audio)
+        print("user: " + r.recognize_google(audio))
+        userInput = req
+      except sr.UnknownValueError:
+        print("Google speech recognition could not understand audio")
+      except sr.RequestError as e:
+        print("Could not Request CResults from google speech recognition Service: {0}".format(e))
+    else:
+      userInput = input("(type quit for exit)  User : ") 
+
+
+      
     if userInput == "quit":
       print("Good Bye , Have A Nice Day")
       sys.exit(0) 
