@@ -106,7 +106,6 @@
     <category>
         <pattern>GOLD</pattern>
         <template>
-              <set name="topic">detail</set>
   
             ok your         
             <set name="g">gold</set>
@@ -142,7 +141,6 @@
     
         <pattern>PLATINUM</pattern>
         <template>
-          <set name="topic">detail</set>
   
             ok your         
              <set name="p">platinum</set>
@@ -179,7 +177,6 @@
     <category>
         <pattern>SILVER</pattern>
         <template>
-             <set name="topic">detail</set>
   
             ok your         
              <set name="s">silver</set>
@@ -216,6 +213,228 @@
 <topic name="COST">
     <category>
         <pattern>* COST *</pattern>
+        
+        <template>
+        <condition>
+        <li name="g" value="gold">
+            Detail cost includes,
+            Decoration  200000 rupees
+            Catering 100000 rupees
+            So the Total Cost Will Be 300000 rupees
+        </li>
+        <li name="p" value="platinum">
+        Detail cost includes,
+             Decoration  300000 rupees
+            Catering 200000 rupees
+
+            So the Total Cost Will Be 500000
+        </li>
+        <li name="s" value="silver">
+        Detail cost includes,
+             Decoration 200000 rupees
+            Catering 200000 rupees
+            So the Total Cost Will Be 200000 rupees
+        </li>
+        </condition>        
+        </template>
+    </category>
+
+     <category>
+        <pattern>* Detail *</pattern>
+        
+        <template>
+        <condition>
+        <li name="g" value="gold">
+            Detail cost includes,
+            Decoration  200000 rupees
+            Catering 100000 rupees
+            So the Total Cost Will Be 300000 rupees
+        </li>
+        <li name="p" value="platinum">
+        Detail cost includes,
+             Decoration  300000 rupees
+            Catering 200000 rupees
+
+            So the Total Cost Will Be 500000
+        </li>
+        <li name="s" value="silver">
+        Detail cost includes,
+             Decoration 200000 rupees
+            Catering 200000 rupees
+            So the Total Cost Will Be 200000 rupees
+        </li>
+        </condition>        
+        </template>
+    </category>
+
+     <category>
+        <pattern>* DETAIL</pattern>
+        
+        <template>
+        <condition>
+        <li name="g" value="gold">
+            Detail cost includes,
+            Decoration  200000 rupees
+            Catering 100000 rupees
+            So the Total Cost Will Be 300000 rupees
+        </li>
+        <li name="p" value="platinum">
+        Detail cost includes,
+             Decoration  300000 rupees
+            Catering 200000 rupees
+
+            So the Total Cost Will Be 500000
+        </li>
+        <li name="s" value="silver">
+        Detail cost includes,
+             Decoration 200000 rupees
+            Catering 200000 rupees
+            So the Total Cost Will Be 200000 rupees
+        </li>
+        </condition>        
+        </template>
+    </category>
+     <category>
+        <pattern>DETAIL *</pattern>
+        
+        <template>
+        <condition>
+        <li name="g" value="gold">
+            Detail cost includes,
+            Decoration  200000 rupees
+            Catering 100000 rupees
+            So the Total Cost Will Be 300000 rupees
+        </li>
+        <li name="p" value="platinum">
+        Detail cost includes,
+             Decoration  300000 rupees
+            Catering 200000 rupees
+
+            So the Total Cost Will Be 500000
+        </li>
+        <li name="s" value="silver">
+        Detail cost includes,
+             Decoration 200000 rupees
+            Catering 200000 rupees
+            So the Total Cost Will Be 200000 rupees
+        </li>
+        </condition>        
+        </template>
+    </category>
+
+     <category>
+        <pattern>DETAIL</pattern>
+        
+        <template>
+        <condition>
+        <li name="g" value="gold">
+            Detail cost includes,
+            Decoration  200000 rupees
+            Catering 100000 rupees
+            So the Total Cost Will Be 300000 rupees
+        </li>
+        <li name="p" value="platinum">
+        Detail cost includes,
+             Decoration  300000 rupees
+            Catering 200000 rupees
+
+            So the Total Cost Will Be 500000
+        </li>
+        <li name="s" value="silver">
+        Detail cost includes,
+             Decoration 200000 rupees
+            Catering 200000 rupees
+            So the Total Cost Will Be 200000 rupees
+        </li>
+        </condition>        
+        </template>
+    </category>
+
+     <category>
+        <pattern>* INFORMATION *</pattern>
+        
+        <template>
+        <condition>
+        <li name="g" value="gold">
+            Detail cost includes,
+            Decoration  200000 rupees
+            Catering 100000 rupees
+            So the Total Cost Will Be 300000 rupees
+        </li>
+        <li name="p" value="platinum">
+        Detail cost includes,
+             Decoration  300000 rupees
+            Catering 200000 rupees
+
+            So the Total Cost Will Be 500000
+        </li>
+        <li name="s" value="silver">
+        Detail cost includes,
+             Decoration 200000 rupees
+            Catering 200000 rupees
+            So the Total Cost Will Be 200000 rupees
+        </li>
+        </condition>        
+        </template>
+    </category>
+     <category>
+        <pattern>* INFORMATION</pattern>
+        
+        <template>
+        <condition>
+        <li name="g" value="gold">
+            Detail cost includes,
+            Decoration  200000 rupees
+            Catering 100000 rupees
+            So the Total Cost Will Be 300000 rupees
+        </li>
+        <li name="p" value="platinum">
+        Detail cost includes,
+             Decoration  300000 rupees
+            Catering 200000 rupees
+
+            So the Total Cost Will Be 500000
+        </li>
+        <li name="s" value="silver">
+        Detail cost includes,
+             Decoration 200000 rupees
+            Catering 200000 rupees
+            So the Total Cost Will Be 200000 rupees
+        </li>
+        </condition>        
+        </template>
+    </category>
+
+     <category>
+        <pattern>INFORMATION *</pattern>
+        
+        <template>
+        <condition>
+        <li name="g" value="gold">
+            Detail cost includes,
+            Decoration  200000 rupees
+            Catering 100000 rupees
+            So the Total Cost Will Be 300000 rupees
+        </li>
+        <li name="p" value="platinum">
+        Detail cost includes,
+             Decoration  300000 rupees
+            Catering 200000 rupees
+
+            So the Total Cost Will Be 500000
+        </li>
+        <li name="s" value="silver">
+        Detail cost includes,
+             Decoration 200000 rupees
+            Catering 200000 rupees
+            So the Total Cost Will Be 200000 rupees
+        </li>
+        </condition>        
+        </template>
+    </category>
+
+     <category>
+        <pattern>INFORMATION</pattern>
         
         <template>
         <condition>
@@ -281,6 +500,8 @@
         <pattern>YES</pattern>
         <template>
             your Event is Confirmed on <get name="date"/> <get name="month"/> <get name="year"/> . Thank You.
+            for another INFORMATION you get in touch with us by
+               email us your venue and your name on abc@gmail.com
         </template>
     </category>
 
