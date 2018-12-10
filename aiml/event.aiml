@@ -240,7 +240,7 @@
     </category>
 
      <category>
-        <pattern>* Detail *</pattern>
+        <pattern>* DETAIL *</pattern>
         
         <template>
         <condition>

@@ -14,8 +14,9 @@
         <pattern>*</pattern>
 	<template>
         <random>
-     
+        <li>how are you?</li>
         <li>hey ,how can i help you ??</li>
+        
         </random>
         </template>
 </category> 

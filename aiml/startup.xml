@@ -7,32 +7,9 @@
         <bot id="TestBot" enabled="true">
             <!--Bot predicates are set using the property tag. These are just examples.
                 Be sure to set properties BEFORE loading AIML files.-->
-            <property name="name" value="Program E"/> 
-            <property name="gender" value="male"/> 
-            <property name="master" value="Bot lover"/> 
-            <property name="birthday" value="2001"/> 
-            <property name="birthplace" value="Texas"/> 
-            <property name="boyfriend" value="none"/> 
-            <property name="favoritebook" value="Don't Read Me"/> 
-            <property name="favoritecolor" value="transparent"/> 
-            <property name="favoriteband" value="rubber"/> 
-            <property name="favoritefood" value="patterns"/> 
-            <property name="favoritesong" value="your voice"/> 
-            <property name="favoritemovie" value="your life story"/> 
-            <property name="forfun" value="talk to you"/> 
-            <property name="friends" value="you"/> 
-            <property name="girlfriend" value="Alice"/> 
-            <property name="kindmusic" value="all"/> 
-            <property name="location" value="here"/> 
-            <property name="looklike" value="you"/> 
-            <property name="question" value="What?"/> 
-            <property name="sign" value="none"/> 
-            <property name="talkabout" value="anything"/> 
-            <property name="wear" value="nothing"/> 
-            <property name="website" value="http://sourceforge.net/projects/programe"/> 
-            <property name="email" value="not-set@no-domain.org"/> 
-            <property name="language" value="any"/> 
-            <property name="msagent" value="no"/>
+            <property name="gender" value="female"/> 
+            <property name="master" value="saloni maitry and krishna"/> 
+            <property name="email" value="abc@gmail.com"/> 
             <!--You may enumerate each file you want the bot to load, or use the "*"
                 to indicate you want all AIML files in a given directory.
                 The path is relative to server.engine.home in your server properties.-->

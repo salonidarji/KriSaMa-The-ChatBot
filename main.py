@@ -42,10 +42,10 @@ while True:
       r = sr.Recognizer()
       with sr.Microphone() as source:
         print("(Speak quit for exit)  User : ")
-        #time.sleep(3)
+        time.sleep(3)
         print("listening...")
-      
         audio = r.listen(source)
+        
 
       try:
         req = r.recognize_google(audio)
